@@ -17,10 +17,9 @@
     </h3></li>
 
     {% empty %}
-    <li><h3> No pizzas Have been added yet.</h3></li>
+    <li><h3> No pizzas have been added</h3></li>
 
     {% endfor %}
 </ul>
-<h3><a href="{% url 'pizzas:new_pizza' %}">Add a new pizza</a></h3>
 
 {% endblock content %}

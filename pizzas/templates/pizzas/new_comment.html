@@ -3,14 +3,14 @@
 {% block content %}
 
 <p><a href="{% url 'pizzas:pizza' pizza.id %}">{{ pizza }}</a></p>
-<p>Add a comment reviewing this pizza:</p>
+<p>Add a comment to rate this pizza:</p>
 
 <form action="{% url 'pizzas:new_comment' pizza.id %}" method='post'>
 
     {% csrf_token %}
     {{ form.as_p }}
 
-    <button name="submit">Add comment</button>
+    <button name="submit">Add Comment</button>
 </form>
 
 {% endblock content %}
